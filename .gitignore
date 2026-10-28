@@ -1,0 +1,22 @@
+# ── 데이터 / 체크포인트: 폴더 구조(.gitkeep)만 올리고 내용은 제외 ──
+# LiTS 데이터 (CC BY-NC-SA, 용량 큼) → Kaggle에서 직접 받아 아래 폴더에 넣기
+data/volume_pt1/*
+!data/volume_pt1/.gitkeep
+data/segmentations/*
+!data/segmentations/.gitkeep
+
+# 학습 결과 (best_model.pth는 파일당 약 370MB → GitHub 100MB 제한 초과)
+checkpoints/*
+!checkpoints/.gitkeep
+
+# ── Python ──
+__pycache__/
+*.py[oc]
+
+# ── Jupyter ──
+.ipynb_checkpoints/
+
+# ── 로그 / 에디터 / 가상환경 ──
+*.log
+.vscode/
+.venv/
